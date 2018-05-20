@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx:${trigger['hash']}
+        image: "nginx:${trigger['hash']}"
         ports:
         - containerPort: 80
